@@ -1,43 +1,134 @@
+ /* Add your CSS styles here */
+
+/* General styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
-#main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
-#title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-#img-div {
-  text-align: center;
+nav li {
+	margin: 0 1rem;
 }
 
-#image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+nav a {
+	color: #fff;
+	text-decoration: none;
 }
 
-#img-caption {
-  font-style: italic;
-  margin-top: 10px;
+main {
+	margin-top: 5rem;
 }
 
-#tribute-info {
-  margin-top: 20px;
+section {
+	padding: 2rem;
 }
 
-#tribute-link {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-  color: blue;
+h2 {
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 2rem;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+label {
+	flex-basis: 100%;
+	margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+	flex-basis: 100%;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+	background-color: #444;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+	nav {
+		flex-grow: 1;
+	}
+	
+	nav ul {
+		justify-content: flex-end;
+	}
+
+	nav li {
+		margin: 0 0.5rem;
+	}
+	
+	section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	section:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	section h2 {
+		flex-basis: 100%;
+		margin-bottom: 2rem;
+	}
+
+	section ul {
+		flex-basis: 30%;
+	}
+
+	section iframe {
+		flex-basis: 60%;
+		height: 30rem;
+	}
+
+	form {
+		flex-basis: 40%;
+		margin-left: auto;
+	}
 }
