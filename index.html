@@ -1,50 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tribute Page</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header id="header">
-      <img id="header-img" src="https://via.placeholder.com/150x50" alt="Logo">
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#features">Features</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="video-container">
-        <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </section>
-      <section id="features">
-        <h2>Features</h2>
-        <ul>
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-        </ul>
-      </section>
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <ul>
-          <li>Plan 1: $10/month</li>
-          <li>Plan 2: $20/month</li>
-          <li>Plan 3: $30/month</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-          <input type="submit" id="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#HTML">HTML</a></li>
+      <li><a class="nav-link" href="#CSS">CSS</a></li>
+      <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+      <li><a class="nav-link" href="#APIs">APIs</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>This is a technical documentation page for web development languages and APIs.</p>
+      <p>Web development is the process of building websites and applications for the internet. It involves using a variety of languages, technologies, and tools to create web pages and web applications.</p>
+      <p>Web development can be divided into three main categories: front-end development, back-end development, and full-stack development.</p>
+      <p>Front-end development involves creating the user interface and user experience of a website or application. This includes designing the layout, choosing colors and fonts, and implementing interactive elements using HTML, CSS, and JavaScript.</p>
+      <p>Back-end development involves creating the server-side logic and database management of a website or application. This includes writing server-side scripts using languages such as PHP, Python, and Ruby, and managing data using database systems such as MySQL, PostgreSQL, and MongoDB.</p>
+      <p>Full-stack development involves combining front-end and back-end development skills to create a complete web application from start to finish.</p>
+      <p>In this technical documentation, we will cover the basics of HTML, CSS, JavaScript, and some popular APIs used in web development.</p>
+    </section>
+    <section class="main-section" id="HTML">
+      <header>HTML</header>
+      <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages.</p>
+      <p>HTML uses a set of elements to define the structure and content of a web page. Elements are enclosed in angle brackets (<>) and are usually composed of a start tag, content, and an end tag. Some elements are self-closing and do not require an end tag.</p>
+      <p>The most commonly used HTML elements include:</p>
+      <ul>
+        <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+        <li><code>&lt;head&gt;</code>: The container for metadata about the HTML page.</li>
+        <li><code>&lt;title&gt;</code>: The title of the HTML page, displayed in the browser tab.</li>
+        <li><code>&lt;body&gt;</code>: The container for the visible content of the HTML page.</li>
+        <li><code>&lt;header&gt;</code>: The top section of a web page, usually containing a logo and navigation links.</li>
+        <li><code>&lt;nav&gt;</code>: The container for navigation links.</li>
+        <li><code>&lt;section&gt;</code>: A section of a web page, usually containing related content.</li>
+        <li><code>&lt;article&gt;</code>: An article or blog post on a web page.</li>
+        <li><code>&lt;p&gt;</code>: A paragraph of text.</li>
+        <li><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>: Unordered list and list item.</li>
+        <li><code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code>: Ordered list and list item.</li>
+        <li><code>&lt;img&gt;</code>: An image on a web page.</li>
+        <li><code>&lt;a&gt;</code>: A hyperlink to another web page or resource.</li>
+        <li><code>&lt;div&gt;</code>: A container for other HTML elements.</li>
+      </ul>
+      <p>HTML also allows the use of attributes to provide additional information about an element. Attributes are specified in the start tag of an elementand usually consist of a name and a value separated by an equal sign. Some commonly usedHTML attributes include:</p>
+      <ul>
+        <li><code>class</code>: Used to apply a CSS class to an element.</li>
+        <li><code>id</code>: Used to provide a unique identifier for an element.</li>
+        <li><code>src</code>: Used to specify the source URL of an image or other media element.</li>
+        <li><code>href</code>: Used to specify the destination URL of a hyperlink.</li>
+        <li><code>alt</code>: Used to provide alternative text for an image.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="CSS">
+      <header>CSS</header>
+      <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of an HTML document.</p>
+      <p>CSS allows developers to separate the presentation of a web page from its content, making it easier to maintain and update the visual design of a website or application.</p>
+      <p>CSS uses selectors to target specific HTML elements and apply styles to them. Styles are defined using property-value pairs, and can be applied inline, in a style block within the head section of an HTML document, or in an external CSS file.</p>
+      <p>The most commonly used CSS properties include:</p>
+      <ul>
+        <li><code>color</code>: The color of text and other elements.</li>
+        <li><code>font-size</code>: The size of text.</li>
+        <li><code>font-family</code>: The font family used for text.</li>
+        <li><code>background-color</code>: The background color of an element.</li>
+        <li><code>margin</code>: The space between elements.</li>
+        <li><code>padding</code>: The space between an element's content and its border.</li>
+        <li><code>border</code>: The border around an element.</li>
+        <li><code>text-align</code>: The alignment of text within an element.</li>
+        <li><code>display</code>: The display style of an element.</li>
+        <li><code>float</code>: The float style of an element.</li>
+        <li><code>position</code>: The positioning of an element.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="JavaScript">
+      <header>JavaScript</header>
+      <p>JavaScript is a programming language used to create interactive web pages and web applications.</p>
+      <p>JavaScript can be used to create dynamic effects such as form validation, image slideshows, and interactive maps. It can also be used to create more complex web applications using frameworks such as React, Angular, and Vue.</p>
+      <p>The basic building blocks of JavaScript include variables, data types, operators, functions, and control structures such as conditionals and loops.</p>
+      <p>JavaScript can be used inline within an HTML document, in a separate script block within the head section of an HTML document, or in an external JavaScript file.</p>
+    </section>
+    <section class="main-section" id="APIs">
+      <header>APIs</header>
+      <p>APIs (Application Programming Interfaces) are a set of protocols and tools used to build software applications.</p>
+      <p>In web development, APIs are often used to communicate with external services and data sources such as social media platforms, weather services, and payment gateways.</p>
+      <p>Some popular web APIs used in web development include the Google Maps API, the Twitter API, the Facebook API, and the PayPal API.</p>
+    </section>
+  </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

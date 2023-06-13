@@ -1,134 +1,73 @@
- /* Add your CSS styles here */
-
-/* General styles */
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
+  /* Set default styles for the whole page */
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
+/* Style the header */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 1rem;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav li {
-	margin: 0 1rem;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
+/* Style the main content area */
 main {
-	margin-top: 5rem;
+  padding: 20px;
 }
 
-section {
-	padding: 2rem;
-}
-
+/* Style the section headings */
 h2 {
-	margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  padding-bottom: 10px;
 }
 
-ul {
-	list-style: disc;
-	margin-left: 2rem;
+/* Style the paragraph text */
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-form {
-	display: flex;
-	flex-wrap: wrap;
+/* Style the links */
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-label {
-	flex-basis: 100%;
-	margin-bottom: 0.5rem;
+a:hover {
+  color: #666;
 }
 
-input[type="email"] {
-	flex-basis: 100%;
-	margin-bottom: 1rem;
-	padding: 0.5rem;
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-input[type="submit"] {
-	background-color: #333;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	padding: 0.5rem 1rem;
+/* Set the navbar to the left half of the screen */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f1f1f1; /* add background color for visibility */
 }
 
-input[type="submit"]:hover {
-	background-color: #444;
-}
-
-/* Media queries */
-
-@media screen and (min-width: 768px) {
-	nav {
-		flex-grow: 1;
-	}
-	
-	nav ul {
-		justify-content: flex-end;
-	}
-
-	nav li {
-		margin: 0 0.5rem;
-	}
-	
-	section {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	section:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-
-	section h2 {
-		flex-basis: 100%;
-		margin-bottom: 2rem;
-	}
-
-	section ul {
-		flex-basis: 30%;
-	}
-
-	section iframe {
-		flex-basis: 60%;
-		height: 30rem;
-	}
-
-	form {
-		flex-basis: 40%;
-		margin-left: auto;
-	}
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  /* styles for smaller devices */
+  #navbar {
+    width: 100%;
+  }
 }
